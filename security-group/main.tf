@@ -20,7 +20,7 @@ resource "aws_security_group" "webtraffic" {
     ipv6_cidr_blocks =[]
     prefix_list_ids = []
     description = ""
-    self = true
+    self = false
   }]
 
   egress = [{
@@ -32,7 +32,7 @@ resource "aws_security_group" "webtraffic" {
     ipv6_cidr_blocks =[]
     prefix_list_ids = []
     description = ""
-    self = true
+    self = false
   }]
 
 }
